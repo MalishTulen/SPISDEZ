@@ -1,0 +1,92 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK\a.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#2: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76FFFB75. Попытка прочесть данные по адресу 0x0000000A в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x3D20 (Main), GetLastError(): 187 (Не найдено указанное имя системного семафора). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int {anonymous}::TX::txSetLocale(int, const char*, const wchar_t*) at c:\users\stepa\downloads\codeblocks\codeblocks\mingw\include\txlib.h:10524:
+
+  10522: $   if (wLocale && !wine)
+  10523:         {
+=>10524: $       _wsetlocale (LC_ALL,     wLocale);
+  10525: $       _wsetlocale (LC_NUMERIC, L"C");           // L"C" (see above)
+  10526:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\stepa\downloads\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  7 2024 11:45:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 07 2024 11:45:54
+
+Run file:	C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK\a.exe
+Directory:	C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#2: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76FFFB75. Попытка прочесть данные по адресу 0x0000000A в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#3: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x3D20 (Main), GetLastError(): 187 (Не найдено указанное имя системного семафора). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int {anonymous}::TX::txSetLocale(int, const char*, const wchar_t*) at c:\users\stepa\downloads\codeblocks\codeblocks\mingw\include\txlib.h:10524:
+
+  10522: $   if (wLocale && !wine)
+  10523:         {
+=>10524: $       _wsetlocale (LC_ALL,     wLocale);
+  10525: $       _wsetlocale (LC_NUMERIC, L"C");           // L"C" (see above)
+  10526:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\stepa\downloads\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  7 2024 11:45:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 07 2024 11:45:54
+
+Run file:	C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK\a.exe
+Directory:	C:\Users\stepa\OneDrive\Documentos\GitHub\SPISOK
+
+--------------------------------------------------
